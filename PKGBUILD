@@ -14,9 +14,9 @@ source=("${url}/releases/download/${pkgver}/${_pkgname}.zip"
 		"liteloader-qqnt-depatch.hook"
 		"liteloader-qqnt-patch.hook")
 
-md5sums=("SKIP"
-         "903c2cb02d8d08e34fbc776e4982133b"
-         "80b6a71e2e34337022bf947324cdcd19")
+sha256sums=('6833511aa62228538be92d6346488a42197f138050ec5f0d84b98d519b8d5fbe'
+            '4c1b129a28d1550c6b616b7a69868c0e9623257981fd2e2d2f04b274aeea4148'
+            '89e6ae7eb8e6ac148adf3eaa9be0134cf10dde501753eced800bd9d0339d0c38')
 
 package() {
 	# prepare to copy files
