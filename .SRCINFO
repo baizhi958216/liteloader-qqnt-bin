@@ -1,7 +1,7 @@
 pkgbase = liteloader-qqnt-bin
 	pkgdesc = 轻量, 简洁, 开源的 QQNT 插件加载器
-	pkgver = 1.1.2
-	pkgrel = 2
+	pkgver = 1.2.0
+	pkgrel = 1
 	url = https://github.com/LiteLoaderQQNT/LiteLoaderQQNT
 	arch = any
 	license = MIT
@@ -9,10 +9,10 @@ pkgbase = liteloader-qqnt-bin
 	provides = liteloader-qqnt
 	conflicts = linuxqq-appimage
 	conflicts = liteloader-qqnt
-	source = https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/download/1.1.2/LiteLoaderQQNT.zip
+	source = https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/download/1.2.0/LiteLoaderQQNT.zip
 	source = liteloader-qqnt-depatch.hook
 	source = liteloader-qqnt-patch.hook
-	sha256sums = 6833511aa62228538be92d6346488a42197f138050ec5f0d84b98d519b8d5fbe
+	sha256sums = 93c8520eb7cf26d2b8e06df70dc1c0d831734498dc9fd3767c099b4fbd89f5c0
 	sha256sums = 4c1b129a28d1550c6b616b7a69868c0e9623257981fd2e2d2f04b274aeea4148
 	sha256sums = 89e6ae7eb8e6ac148adf3eaa9be0134cf10dde501753eced800bd9d0339d0c38
 

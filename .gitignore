@@ -1,3 +1,4 @@
+*.tar
 *.tar.zst
 *.tar.xz
 *.tar.gz
