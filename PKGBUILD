@@ -2,7 +2,7 @@
 pkgname="liteloader-qqnt-bin"
 _pkgname="LiteLoaderQQNT"
 pkgver=1.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="轻量, 简洁, 开源的 QQNT 插件加载器"
 arch=('any')
 url="https://github.com/LiteLoaderQQNT/LiteLoaderQQNT"
@@ -15,8 +15,8 @@ source=("${url}/releases/download/${pkgver}/${_pkgname}.zip"
 		"liteloader-qqnt-patch.hook")
 
 sha256sums=('93c8520eb7cf26d2b8e06df70dc1c0d831734498dc9fd3767c099b4fbd89f5c0'
-            '4c1b129a28d1550c6b616b7a69868c0e9623257981fd2e2d2f04b274aeea4148'
-            '89e6ae7eb8e6ac148adf3eaa9be0134cf10dde501753eced800bd9d0339d0c38')
+            '19c14e36baeffd1b385de2757cdaa8a68766ddea0480bbeec04efb7dcc2bc2d3'
+            '4b0272c318e7ecc3ca941a9ecae9ae4085b78dace8e7d962d4b7d8c10b4aa1d5')
 
 package() {
 	# prepare to copy files
