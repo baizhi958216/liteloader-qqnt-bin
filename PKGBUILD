@@ -2,7 +2,7 @@
 pkgname="liteloader-qqnt-bin"
 _pkgname="LiteLoaderQQNT"
 pkgver=1.2.3
-pkgrel=1
+pkgrel=2
 pkgdesc="轻量, 简洁, 开源的 QQNT 插件加载器"
 arch=('any')
 url="https://github.com/LiteLoaderQQNT/LiteLoaderQQNT"
@@ -15,6 +15,9 @@ source=("LiteLoaderQQNT-${pkgver}.zip::${url}/releases/download/${pkgver}/${_pkg
 	"liteloader-qqnt-depatch.hook"
 	"liteloader-qqnt-patch.hook"
 	)
+
+# Explicitly specify that empty directories are allowed
+options=(emptydirs)
 
 sha256sums=(
 	'c7223a709b9514c1dbfd11e891af7d1a2076e53f888d431490975f170f0f8819'
@@ -51,4 +54,7 @@ package() {
 	# Install pacman hooks
 	install -Dm644 "${srcdir}/liteloader-qqnt-patch.hook" "${pkgdir}/etc/pacman.d/hooks/liteloader-qqnt-patch.hook"
 	install -Dm644 "${srcdir}/liteloader-qqnt-depatch.hook" "${pkgdir}/etc/pacman.d/hooks/liteloader-qqnt-depatch.hook"
+
+	# Create an empty plugin directory to suppress startup warnings
+	install -dm755 "${pkgdir}/opt/LiteLoaderQQNT/plugins"
 }
